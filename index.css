@@ -1,14 +1,18 @@
 /* 
 Challenge:
-1. Create a body selector.                            DONE
-2. Set the base font size and text color to 
-   the values given on the slide.                     DONE
-3. Bring in "Roboto" from Google Fonts and 
-   set it as the default font. Make sure 
-   browsers will fall back on a sans-serif 
-   font if Roboto is unavailable.                     DONE
-4. Override HTML's default margin.                    DONE
+1. Create a "header" selector.                          DONE
+2. Give it its background color.                        DONE
+3. What CSS property do you need to use to remove
+   the annoying white space at the top? Give this 
+   property a value of 45px top and bottom.             DONE
+3. Create selectors for the h1 and h3 elements.         DONE
+4. Assign the correct margins, size & colors to h1      DONE N.B. I had previously changed the h3 to an h2 for better semantics.
+   and h3.
+At the end of the challenge, the h1 and h3 will 
+still be up right up against the left-hand edge of 
+the browser. That is fine for now.   
 */
+
 .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -25,5 +29,22 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     color: #2b283a;
+    margin: 0;
+}
+
+header {
+    background-color: #5f20a3;
+    padding: 45px 0;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 2.25;
+    margin: 0;
+}
+
+h2 {
+    color: #d0aaff;
+    font-size: 1.25;
     margin: 0;
 }
