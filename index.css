@@ -1,13 +1,11 @@
 /* 
 Challenge:
-1. Add CSS so the text in the first section 
-   renders correctly.                           ADDED screenshot(10).png to images for reference
-⚠️ Watch out for the amount of white space 
-   you have between the start of the section 
-   and the h2.
-⚠️ Don't write too much code!
-                                                ALL DONE
-                                                */ 
+1. Set the color of the link in the paragraph.
+2. Make the link color change on hover and 
+   active states.
+3. Search online to find out how you can give 
+   the underline a dotted appearance. 
+*/
 .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -27,11 +25,7 @@ body {
     margin: 0;
 }
 
-header {
-    background-color: #5f20a3;
-    padding: 45px 0;
-}
-
+/* TYPOGRAPHY  */
 h1 {
     color: whitesmoke;
     font-size: 2.25;
@@ -50,6 +44,13 @@ h3 {
     margin: 0;
 }
 
+/* LAYOUT */
+
+header {
+    background-color: #5f20a3;
+    padding: 45px 0;
+}
+
 section {
     padding: 45px 0;
     margin: 0 45px;
@@ -59,6 +60,7 @@ section {
     width: 100%;
 }
 
+/* BUTTONS AND LINKS */
 button {
     padding: 10px 20px;
     font-weight: bolder;
@@ -77,6 +79,14 @@ button {
 }
 
 #crafty {
-    color: orangered;
-    text-decoration: underline;
+    color: #ef5839;
+    text-decoration-style: dotted;
+}
+
+#crafty:hover {
+    color: #d4b44c;
+}
+
+#crafty:active {
+    color: #d4b44c;
 }
