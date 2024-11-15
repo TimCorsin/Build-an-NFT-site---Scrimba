@@ -1,11 +1,15 @@
 /* 
 Challenge:
-1. Set the color of the link in the paragraph.
-2. Make the link color change on hover and 
-   active states.
-3. Search online to find out how you can give 
-   the underline a dotted appearance. 
+1. Give the images in section two a class.
+2. Use that class to set the width and 
+   border-radius for the images.
+3. Wrap the two images in a container div 
+   and give it a class.
+4. Create the CSS selector for that class 
+   and use flex-box to layout the images
+   as shown in the slide.
 */
+
 .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -35,7 +39,6 @@ h1 {
 h2 {
     color: #d0aaff;
     font-size: 1.25rem;
-
     margin: 0 45px;
 }
 
@@ -44,49 +47,91 @@ h3 {
     margin: 0;
 }
 
+p {
+    line-height: 23px;
+}
+
 /* LAYOUT */
 
 header {
-    background-color: #5f20a3;
+    background-color: #5f29a3;
     padding: 45px 0;
 }
 
 section {
     padding: 45px 0;
-    margin: 0 45px;
+    /* margin: 0 45PX; */
 }
+
+#section-two {
+    color: whitesmoke;
+    background-color: #5f29a3;    
+}
+
+.container {
+    /* width: 620px; */
+    margin: 0 auto;
+    padding: 0 45px;
+}
+
+#image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 45px 0;;
+    color: #5f29a3;
+}
+
+/* BUTTONS AND LINKS */
+.btn-dark,
+.btn-mid,
+.btn-light {
+    padding: 10px 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-dark {
+    color: whitesmoke;
+    background-color: #5f29a3;
+}
+
+.btn-mid {
+    color: #5f20a3;
+    background-color: #d0aaff;
+}
+
+.btn-light{
+    background-color: whitesmoke;
+    color: #5f29a3;
+}
+a{
+    color: #ef5839;
+    text-decoration-style: dotted;
+}
+
+a:hover {
+    color: #d4b44c;
+}
+
+a:active {
+    color: #d4b44c;
+}
+
+/* IMAGES AND OTHER */
 
 .nft-images {
     width: 100%;
 }
 
-/* BUTTONS AND LINKS */
-button {
-    padding: 10px 20px;
-    font-weight: bolder;
-    border: none;
-    border-radius: 5px;
-}
-
-#buy-nft {
-    color: whitesmoke;
-    background-color: #5f20a3;
-}
-
-#more-info {
-    color: #5f20a3;
-    background-color: #d0aaff;
-}
-
-#crafty {
-    color: #ef5839;
-    text-decoration-style: dotted;
-}
-
-#crafty:hover {
-    color: #d4b44c;
-}
-
-#crafty:active {
-    color: #d4b44c;
+.images-section-two {
+    width: 42.5%;
+    border-radius: 4.6px;
 }
