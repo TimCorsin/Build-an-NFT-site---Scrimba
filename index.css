@@ -112,17 +112,19 @@ footer {
     background-color: whitesmoke;
     color: #5f29a3;
 }
+
 a{
     color: #ef5839;
     text-decoration-style: dotted;
 }
 
-a:hover {
+a:hover, a:active {
     color: #d4b44c;
 }
 
-a:active {
-    color: #d4b44c;
+.btn-styles:hover, .btn-styles:active {
+    background-color: #f3e885;
+    color: #2b238a;
 }
 
 /* IMAGES AND OTHER */
