@@ -88,15 +88,14 @@ footer {
 }
 
 /* BUTTONS AND LINKS */
-.btn-dark,
-.btn-mid,
-.btn-light {
+.btn-styles {
     padding: 10px 20px;
     font-weight: bolder;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
+    margin-right: 5px;
 }
 
 .btn-dark {
